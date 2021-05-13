@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F6F7;
+}
+
+.menubar {
+  overflow: hidden;
+  background-color: #000814;
+  font-size: 20px;
+  font-family: 'Signika', sans-serif;
+}
+
+.menubar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.menubar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffe770;
+  color: #001d3d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to each other */
+.leftColumn {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 20px;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileName{
+  font-family: 'Signika', sans-serif;
+}
+.profileAbout{
+  font-family: 'Padauk', sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'Padauk', sans-serif;
+    letter-spacing: .2rem;
+    color: #000814;
+}
+h1{
+    text-align: center;
+    font-family: 'Bevan', cursive;
+    font-size: 4em;
+    color: #001d3d;
+}
+h2{
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 2.5em;
+    color: #000814;
+}
+h4{
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5em;
+    color: #000814;
+}
+hr{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.pics{
+		width: 800px;
+		height: 450px;
+		margin: auto;
+		display: block;
+}
+
+	figcaption{
+		margin: auto;
+		text-align: center;
+		display: block;
+		background-color: #CEDADF;
+		width: 800px;
+		padding: 15px 0px;
+		font-size: 18px;
+	}
+	
+	li{
+		font-size: 22px;
+		margin-bottom: 15px;
+		letter-spacing: .1em;
+		text-align: justify;
+	}
+	
+	li b{
+		font-size: 20px;
+	}
